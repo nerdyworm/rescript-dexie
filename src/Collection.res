@@ -32,4 +32,4 @@ external toArray: t<'item> => promise<array<'item>> = "toArray"
 
 @send external until: (t<'item>, 'item => bool) => t<'item> = "until"
 
-@send external reverse: t<'item> => promise<array<'item>> = "sortBy"
+@send external reverse: t<'item> => t<'item> = "sortBy"
